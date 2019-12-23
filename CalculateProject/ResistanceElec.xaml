@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="ResistanceElec" Height="450" Width="800">
     <Grid>
-        <TextBox Name="PowerTextBox" Height="23" Width="133" HorizontalAlignment="Left" Margin="271,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <TextBox Name="VoltageTextBox" Height="23" Width="133" HorizontalAlignment="Left" Margin="271,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <TextBox Name="ResultTextBox" Height="23" Width="133" HorizontalAlignment="Left" Margin="271,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Label Content="Сила тока" HorizontalAlignment="Left" Margin="202,179,0,0" VerticalAlignment="Top"/>
-        <Label Content="Напряжение" HorizontalAlignment="Left" Margin="186,200,0,0" VerticalAlignment="Top"/>
-        <Label Content="Результат" HorizontalAlignment="Left" Margin="203,256,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="494,334,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="ResetButton" Content="Сбросить" HorizontalAlignment="Left" Margin="588,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResetButton_Click"/>
+        <Button x:Name="ResultButton" Content="Вычислить" HorizontalAlignment="Left" Margin="463,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click"/>
+        <TextBox x:Name="PowerTextBox" HorizontalAlignment="Left" Height="23" Margin="263,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" TextChanged="PowerTextBox_TextChanged"/>
+        <TextBox x:Name="VoltageTextBox" HorizontalAlignment="Left" Height="23" Margin="263,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" TextChanged="VoltageTextBox_TextChanged"/>
+        <Label Content="Сила тока" HorizontalAlignment="Left" Margin="199,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Напряжение" HorizontalAlignment="Left" Margin="183,198,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="263,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
+        <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

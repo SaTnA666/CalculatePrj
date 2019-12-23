@@ -40,7 +40,7 @@ namespace CalculateProject
                  powerElec.Show();
 
              }*/
-            restart: if(ResistanceTextBox1.Text.Length > 38 || VoltageTextBox1.Text.Length > 38)
+            restart: if(ResistanceTextBox1.Text.Length > 38 || VoltageTextBox1.Text.Length > 38)//Да, говнокод, и что, это же работает
             {
                 MessageBox.Show("Перенаполнение разрядов");
                 ResistanceTextBox1.Text = Convert.ToString(0);

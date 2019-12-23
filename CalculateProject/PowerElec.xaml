@@ -9,14 +9,14 @@
     <Grid>
         <TextBox x:Name="ResistanceTextBox" HorizontalAlignment="Left" Height="23" Margin="305,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
         <TextBox x:Name="VoltageTextBox" HorizontalAlignment="Left" Height="23" Margin="305,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
-        <Button x:Name="ResultButton" Content="Найти" HorizontalAlignment="Left" Margin="424,251,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click"/>
+        <Button x:Name="ResultButton" Content="Вычислить" HorizontalAlignment="Left" Margin="424,251,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click"/>
         <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="305,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Напряжение" HorizontalAlignment="Left" Margin="220,168,0,0" VerticalAlignment="Top"/>
         <Label Content="Сопротивление" HorizontalAlignment="Left" Margin="203,140,0,0" VerticalAlignment="Top"/>
         <Grid>
             <TextBox x:Name="ResistanceTextBox1" HorizontalAlignment="Left" Height="23" Margin="305,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" TextChanged="ResistanceTextBox1_TextChanged"/>
             <TextBox x:Name="VoltageTextBox1" HorizontalAlignment="Left" Height="23" Margin="305,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" TextChanged="VoltageTextBox1_TextChanged"/>
-            <TextBox x:Name="ResultTextBox1" HorizontalAlignment="Left" Height="23" Margin="305,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="ResultTextBox1" HorizontalAlignment="Left" Height="23" Margin="305,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
             <Label Content="Результат" HorizontalAlignment="Left" Margin="237,211,0,0" VerticalAlignment="Top"/>
             <Button Name="ResetButton" Content="Сбросить" HorizontalAlignment="Left" Margin="549,251,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResetButton_Click"/>
             <CheckBox Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="498,143,0,0" VerticalAlignment="Top"/>
