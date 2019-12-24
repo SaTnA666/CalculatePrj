@@ -15,6 +15,7 @@
         <Label Content="Напряжение" HorizontalAlignment="Left" Margin="183,198,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="263,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
         <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

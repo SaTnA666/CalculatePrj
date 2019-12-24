@@ -33,13 +33,16 @@ namespace CalculateProject
             Voltage = Convert.ToDouble(VoltageTextBox.Text);
             Power = Convert.ToDouble(PowerTextBox.Text);
             ResistanceElecMethod(Voltage, Power, ref Result);
-            ResultTextBox.Text = Convert.ToString(Result);
+            if(OkrSot.IsChecked == true)
+            {
+                ResultTextBox.Text = String.Format("{0:0.00}", Result);
+            }
+            else ResultTextBox.Text = Convert.ToString(Result);
 
         }
         public void ResistanceElecMethod(double volt, double pow, ref double result)
         {
-            result = volt/pow;// + (volt % res);
-
+            result = volt/pow;
         }
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
