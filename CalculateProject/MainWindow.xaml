@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Калькулятор" Height="450" Width="800">
     <Grid>
-        <Button x:Name="PhisicName" Content="Физика" HorizontalAlignment="Left" Margin="351,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="PhisicName" Content="Физика" HorizontalAlignment="Left" Margin="351,320,0,0" VerticalAlignment="Top" Width="75" Click="PhisicName_Click"/>
 
     </Grid>
 </Window>

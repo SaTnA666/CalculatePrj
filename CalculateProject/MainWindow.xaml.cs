@@ -24,5 +24,15 @@ namespace CalculateProject
         {
             InitializeComponent();
         }
+
+        private void PhisicName_Click(object sender, RoutedEventArgs e)
+        {
+            
+            PhisicWindow phisicWindow = new PhisicWindow();
+            phisicWindow.Show();
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+
+        }
     }
 }

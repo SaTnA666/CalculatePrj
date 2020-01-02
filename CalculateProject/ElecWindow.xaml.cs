@@ -23,5 +23,13 @@ namespace CalculateProject
         {
             InitializeComponent();
         }
+
+        private void ResistanceElec_Click(object sender, RoutedEventArgs e)
+        {
+            ResistanceElec resistanceElec = new ResistanceElec();
+            resistanceElec.Show();
+            ElecWindow elecWindow = new ElecWindow();
+            this.Close();
+        }
     }
 }
