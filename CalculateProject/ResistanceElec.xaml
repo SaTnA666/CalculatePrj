@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculateProject"
         mc:Ignorable="d"
-        Title="ResistanceElec" Height="450" Width="800">
+        Title="Найти сопротивление" Height="450" Width="800">
     <Grid>
         <Button x:Name="ResetButton" Content="Сбросить" HorizontalAlignment="Left" Margin="588,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResetButton_Click"/>
         <Button x:Name="ResultButton" Content="Вычислить" HorizontalAlignment="Left" Margin="463,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click"/>
@@ -15,7 +15,7 @@
         <Label Content="Напряжение" HorizontalAlignment="Left" Margin="183,198,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="263,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
         <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top" Checked="OkrSot_Checked"/>
 
     </Grid>
 </Window>

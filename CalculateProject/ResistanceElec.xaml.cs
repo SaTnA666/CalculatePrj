@@ -49,6 +49,7 @@ namespace CalculateProject
             VoltageTextBox.Text = "";
             PowerTextBox.Text = "";
             ResultTextBox.Text = "";
+            OkrSot.IsChecked = false;
 
         }
 
@@ -60,6 +61,11 @@ namespace CalculateProject
         private void VoltageTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             ResultButton.IsEnabled = PowerTextBox.Text.Length != 0 && VoltageTextBox.Text.Length != 0;
+        }
+
+        private void OkrSot_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
