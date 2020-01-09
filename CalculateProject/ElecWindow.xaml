@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculateProject"
         mc:Ignorable="d"
-        Title="Электродинамика" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Электродинамика" Height="450" Width="800" FontFamily="Trebuchet MS" Icon="ICOWindows.png">
     <Grid>
-        <Button Name="PowerElec" Content="Сила тока" HorizontalAlignment="Left" Margin="320,247,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
-        <Button Name="ResistanceElec" Content="Сопротивление" HorizontalAlignment="Left" Margin="320,220,0,0" VerticalAlignment="Top" Width="120" Height="22" Click="ResistanceElec_Click"/>
+        <Button Name="ElecPower" Content="Сила тока" HorizontalAlignment="Left" Margin="320,247,0,0" VerticalAlignment="Top" Width="120" Height="22" FontFamily="Trebuchet MS" Click="PowerElec_Click"/>
+        <Button Name="ResistanceElec" Content="Сопротивление" HorizontalAlignment="Left" Margin="320,220,0,0" VerticalAlignment="Top" Width="120" Height="22" Click="ResistanceElec_Click" FontFamily="Trebuchet MS"/>
 
     </Grid>
 </Window>

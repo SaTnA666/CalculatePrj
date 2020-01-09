@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace CalculateProject
 {
@@ -23,6 +24,7 @@ namespace CalculateProject
         public MainWindow()
         {
             InitializeComponent();
+            PhisicButton.Width = 0;
         }
 
         private void PhisicName_Click(object sender, RoutedEventArgs e)
@@ -33,6 +35,23 @@ namespace CalculateProject
             MainWindow mainWindow = new MainWindow();
             this.Close();
 
+        }
+        private void AnimationButton_Click(object sender, RoutedEventArgs e)
+        {
+            DoubleAnimation VisiblAnimation = new DoubleAnimation();
+            VisiblAnimation.From = PhisicButton.ActualWidth;
+            VisiblAnimation.To = 109;
+            VisiblAnimation.Duration = TimeSpan.FromSeconds(1);
+            PhisicButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
+            VisiblAnimation.From = AnimationButton.ActualWidth;
+            VisiblAnimation.To = 0;
+            AnimationButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
+
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

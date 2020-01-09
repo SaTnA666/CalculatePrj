@@ -29,7 +29,15 @@ namespace CalculateProject
             ResistanceElec resistanceElec = new ResistanceElec();
             resistanceElec.Show();
             ElecWindow elecWindow = new ElecWindow();
-            this.Close();
+            Close();
+        }
+
+        private void PowerElec_Click(object sender, RoutedEventArgs e)
+        {
+            PowerElec powerElec = new PowerElec();
+            powerElec.Show();
+            ElecWindow elecWindow = new ElecWindow();
+            Close();
         }
     }
 }

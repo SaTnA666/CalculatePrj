@@ -5,17 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculateProject"
         mc:Ignorable="d"
-        Title="Найти сопротивление" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Найти сопротивление" Height="450" Width="800" FontFamily="Trebuchet MS" Icon="ICOWindows.png">
     <Grid>
-        <Button x:Name="ResetButton" Content="Сбросить" HorizontalAlignment="Left" Margin="588,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResetButton_Click"/>
-        <Button x:Name="ResultButton" Content="Вычислить" HorizontalAlignment="Left" Margin="463,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click"/>
+        <Button x:Name="ResetButton" Content="Сбросить" HorizontalAlignment="Left" Margin="588,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResetButton_Click" FontFamily="Trebuchet MS"/>
+        <Button x:Name="ResultButton" Content="Вычислить" HorizontalAlignment="Left" Margin="463,312,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="ResultButton_Click" FontFamily="Trebuchet MS"/>
         <TextBox x:Name="PowerTextBox" HorizontalAlignment="Left" Height="23" Margin="263,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" TextChanged="PowerTextBox_TextChanged"/>
         <TextBox x:Name="VoltageTextBox" HorizontalAlignment="Left" Height="23" Margin="263,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" TextChanged="VoltageTextBox_TextChanged"/>
-        <Label Content="Сила тока" HorizontalAlignment="Left" Margin="199,170,0,0" VerticalAlignment="Top"/>
-        <Label Content="Напряжение" HorizontalAlignment="Left" Margin="183,198,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сила тока" HorizontalAlignment="Left" Margin="199,170,0,0" VerticalAlignment="Top" FontFamily="Trebuchet MS"/>
+        <Label Content="Напряжение" HorizontalAlignment="Left" Margin="183,198,0,0" VerticalAlignment="Top" FontFamily="Trebuchet MS"/>
         <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="23" Margin="263,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
-        <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top" Checked="OkrSot_Checked"/>
+        <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" FontFamily="Trebuchet MS"/>
+        <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top" Checked="OkrSot_Checked" FontFamily="Trebuchet MS"/>
+        <Button x:Name="BackToMain" Content="В меню" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="75" Click="BackToMain_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="708,382,0,9.667" Width="75" Click="Back_Click"/>
 
     </Grid>
 </Window>

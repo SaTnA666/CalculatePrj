@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace CalculateProject
 {
@@ -19,9 +20,34 @@ namespace CalculateProject
     /// </summary>
     public partial class PhisicWindow : Window
     {
+       // PhisicWindow phisicWindow = new PhisicWindow(); Разобраться в определении форм во всем проекте
+        
         public PhisicWindow()
         {
             InitializeComponent();
+           
         }
+       // PhisicWindow phisicWindow = new PhisicWindow();
+        private void ElecButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            PhisicWindow phisicWindow = new PhisicWindow();
+            this.Close();
+            ElecWindow elecWindow = new ElecWindow();
+            elecWindow.Show();
+           
+        }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            PhisicWindow phisicWindow = new PhisicWindow();
+            this.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            //phisicWindow.Close();
+
+        }
+
+       
     }
 }

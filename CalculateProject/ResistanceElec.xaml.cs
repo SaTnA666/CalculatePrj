@@ -67,5 +67,21 @@ namespace CalculateProject
         {
 
         }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            PhisicWindow phisicWindow = new PhisicWindow();
+            this.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            ResistanceElec resistanceElec = new ResistanceElec();
+            Close();
+            ElecWindow elecWindow = new ElecWindow();
+            elecWindow.Show();
+        }
     }
 }

@@ -94,5 +94,21 @@ namespace CalculateProject
         {
             ResultButton.IsEnabled = ResistanceTextBox1.Text.Length != 0 && VoltageTextBox1.Text.Length != 0;
         }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            PhisicWindow phisicWindow = new PhisicWindow();
+            this.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            PowerElec powerElec = new PowerElec();
+            Close();
+            ElecWindow elecWindow = new ElecWindow();
+            elecWindow.Show();
+        }
     }
 }
