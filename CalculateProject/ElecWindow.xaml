@@ -10,6 +10,7 @@
     <Grid>
         <Button Name="ElecPower" Content="Сила тока" HorizontalAlignment="Left" Margin="320,247,0,0" VerticalAlignment="Top" Width="120" Height="22" FontFamily="Trebuchet MS" Click="PowerElec_Click"/>
         <Button Name="ResistanceElec" Content="Сопротивление" HorizontalAlignment="Left" Margin="320,220,0,0" VerticalAlignment="Top" Width="120" Height="22" Click="ResistanceElec_Click" FontFamily="Trebuchet MS"/>
+        <Button x:Name="BackToMain" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,392,0,0" Click="BackToMain_Click"/>
 
     </Grid>
 </Window>

@@ -18,7 +18,7 @@
         <Label Content="Результат" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" FontFamily="Trebuchet MS"/>
         <CheckBox x:Name="OkrSot" Content="Округлить до сотых" HorizontalAlignment="Left" Margin="480,173,0,0" VerticalAlignment="Top" Checked="OkrSot_Checked" FontFamily="Trebuchet MS"/>
         <Button x:Name="BackToMain" Content="В меню" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="75" Click="BackToMain_Click"/>
-        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="708,382,0,9.667" Width="75" Click="Back_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="700,392,0,0" Width="75" Height="17" Click="Back_Click"/>
 
     </Grid>
 </Window>

@@ -39,5 +39,13 @@ namespace CalculateProject
             ElecWindow elecWindow = new ElecWindow();
             Close();
         }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            ElecWindow elecWindow = new ElecWindow();
+            this.Close();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+        }
     }
 }
