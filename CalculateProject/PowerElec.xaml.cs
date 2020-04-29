@@ -33,32 +33,22 @@ namespace CalculateProject
 
        public void ResultButton_Click(object sender, RoutedEventArgs e)
         {
-            /* if (ResistanceTextBox1.Text == "" && VoltageTextBox1.Text == "")
-             {
-                 MessageBox.Show("Nope");
-                 PowerElec powerElec = new PowerElec();
-                 powerElec.Show();
-
-             }*/
-            restart: if(ResistanceTextBox1.Text.Length > 38 || VoltageTextBox1.Text.Length > 38)//Да, говнокод, и что, это же работает
+            try
             {
-                MessageBox.Show("Перенаполнение разрядов");
-                ResistanceTextBox1.Text = Convert.ToString(0);
-                VoltageTextBox1.Text = Convert.ToString(0);
-                ResultTextBox1.Text = "";
-                goto restart;
-
+                Resistance = Convert.ToDouble(ResistanceTextBox1.Text);
+                Voltage = Convert.ToDouble(VoltageTextBox1.Text);
+                PowerElecMethod(Voltage, Resistance, ref Result);
+                //RadioButton radio = new RadioButton();
+                if (OkrSot.IsChecked == true)
+                {
+                    ResultTextBox1.Text = String.Format("{0:0.00}", Result);
+                }
+                else ResultTextBox1.Text = Convert.ToString(Result);
             }
-            Resistance = Convert.ToDouble(ResistanceTextBox1.Text);
-            Voltage = Convert.ToDouble(VoltageTextBox1.Text);
-            PowerElecMethod(Voltage, Resistance,ref Result);
-            //RadioButton radio = new RadioButton();
-            if(OkrSot.IsChecked == true)
+            catch (FormatException)
             {
-                ResultTextBox1.Text = String.Format("{0:0.00}", Result);
+                MessageBox.Show("Введи числа");
             }
-            else ResultTextBox1.Text = Convert.ToString(Result);
-
         }
         public void PowerElecMethod(double volt,double res,ref double result)
         {

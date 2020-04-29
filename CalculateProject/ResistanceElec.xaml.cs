@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace CalculateProject
 {
@@ -30,14 +20,21 @@ namespace CalculateProject
 
         private void ResultButton_Click(object sender, RoutedEventArgs e)
         {
-            Voltage = Convert.ToDouble(VoltageTextBox.Text);
-            Power = Convert.ToDouble(PowerTextBox.Text);
-            ResistanceElecMethod(Voltage, Power, ref Result);
-            if(OkrSot.IsChecked == true)
+            try
             {
-                ResultTextBox.Text = String.Format("{0:0.00}", Result);
+                Voltage = Convert.ToDouble(VoltageTextBox.Text);
+                Power = Convert.ToDouble(PowerTextBox.Text);
+                ResistanceElecMethod(Voltage, Power, ref Result);
+                if (OkrSot.IsChecked == true)
+                {
+                    ResultTextBox.Text = String.Format("{0:0.00}", Result);
+                }
+                else ResultTextBox.Text = Convert.ToString(Result);
             }
-            else ResultTextBox.Text = Convert.ToString(Result);
+            catch (FormatException)
+            {
+                MessageBox.Show("Введи числа");
+            }
 
         }
         public void ResistanceElecMethod(double volt, double pow, ref double result)
