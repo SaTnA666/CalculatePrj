@@ -29,7 +29,7 @@ namespace CalculateProject
 
         private void PhisicName_Click(object sender, RoutedEventArgs e)
         {
-            
+
             PhisicWindow phisicWindow = new PhisicWindow();
             phisicWindow.Show();
             MainWindow mainWindow = new MainWindow();
@@ -38,20 +38,26 @@ namespace CalculateProject
         }
         private void AnimationButton_Click(object sender, RoutedEventArgs e)
         {
-            DoubleAnimation VisiblAnimation = new DoubleAnimation();
-            VisiblAnimation.From = PhisicButton.ActualWidth;
-            VisiblAnimation.To = 109;
-            VisiblAnimation.Duration = TimeSpan.FromSeconds(1);
-            PhisicButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
-            VisiblAnimation.From = AnimationButton.ActualWidth;
-            VisiblAnimation.To = 0;
-            AnimationButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
-
+            bool counter;
+            do
+            {
+                counter = true;
+                DoubleAnimation VisiblAnimation = new DoubleAnimation();
+                VisiblAnimation.From = PhisicButton.ActualWidth;
+                VisiblAnimation.To = 220;
+                VisiblAnimation.Duration = TimeSpan.FromSeconds(1);
+                PhisicButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
+                VisiblAnimation.From = AnimationButton.ActualWidth;
+                VisiblAnimation.To = 0;
+                AnimationButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
+                counter = false;
+            } while (counter);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
         }
+
     }
 }

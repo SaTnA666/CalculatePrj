@@ -10,9 +10,9 @@
     <Grid>
 
         <StackPanel VerticalAlignment="Center" >
-        <Button x:Name="PhisicButton" Content="Физика" HorizontalAlignment="Left" Margin="350,320,0,0" VerticalAlignment="Top" Width="109" Click="PhisicName_Click" FontFamily="Trebuchet MS"/>
-        <Button x:Name="AnimationButton" Content="Привет!" HorizontalAlignment="Left" Margin="350,202,0,0" VerticalAlignment="Top" Width="109" Click="AnimationButton_Click" FontFamily="Trebuchet MS"/>
-        <Button x:Name="Exit" Content="Выход" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
-         </StackPanel>
-        </Grid>
+            <Button x:Name="PhisicButton" Content="Физика" HorizontalAlignment="Left" Margin="292,320,0,0" VerticalAlignment="Top" Width="220" Click="PhisicName_Click" FontFamily="Trebuchet MS" Height="37"/>
+            <Button x:Name="AnimationButton" Content="Привет!" HorizontalAlignment="Left" Margin="322,202,0,0" VerticalAlignment="Top" Width="158" Click="AnimationButton_Click" FontFamily="Trebuchet MS" Height="31"/>
+            <Button x:Name="Exit" Content="Выход" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="75" Click="Exit_Click"/>
+        </StackPanel>
+    </Grid>
 </Window>

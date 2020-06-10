@@ -6,7 +6,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
                     <Grid>
-                        <Rectangle Fill="White" RadiusY="20" RadiusX="20" Stroke="#FFCE0000"/>
+                        <Rectangle Fill="White" RadiusY="20" RadiusX="4" Stroke="#FFCE0000"/>
                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
