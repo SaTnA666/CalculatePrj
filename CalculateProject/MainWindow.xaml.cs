@@ -21,7 +21,7 @@ namespace CalculateProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow() // Влад Дремо лошара ебаная
         {
             InitializeComponent();
             PhisicButton.Width = 0;
