@@ -21,43 +21,28 @@ namespace CalculateProject
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow() // Влад Дремо лошара ебаная
+        public MainWindow()
         {
             InitializeComponent();
-            PhisicButton.Width = 0;
+            MainFrame.Navigate(new MainMenu());
+            Manager.MainFrame = MainFrame;
         }
 
-        private void PhisicName_Click(object sender, RoutedEventArgs e)
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-
-            PhisicWindow phisicWindow = new PhisicWindow();
-            phisicWindow.Show();
-            MainWindow mainWindow = new MainWindow();
-            this.Close();
-
-        }
-        private void AnimationButton_Click(object sender, RoutedEventArgs e)
-        {
-            bool counter;
-            do
+            if (MainFrame.CanGoBack)
             {
-                counter = true;
-                DoubleAnimation VisiblAnimation = new DoubleAnimation();
-                VisiblAnimation.From = PhisicButton.ActualWidth;
-                VisiblAnimation.To = 220;
-                VisiblAnimation.Duration = TimeSpan.FromSeconds(1);
-                PhisicButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
-                VisiblAnimation.From = AnimationButton.ActualWidth;
-                VisiblAnimation.To = 0;
-                AnimationButton.BeginAnimation(Button.WidthProperty, VisiblAnimation);
-                counter = false;
-            } while (counter);
+                ButtonBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                ButtonBack.Visibility = Visibility.Hidden;
+            }
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            Environment.Exit(0);
+            Manager.MainFrame.GoBack();
         }
-
     }
 }
