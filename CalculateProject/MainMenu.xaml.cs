@@ -23,21 +23,22 @@ namespace CalculateProject
         public MainMenu()
         {
             InitializeComponent();
+            Manager.SelectedMenuItemFrame = SelectedMenuItemFrame;
         }
 
-        private void MathPage_Click(object sender, RoutedEventArgs e)
+        private void OpenMathPageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.SelectedMenuItemFrame.Navigate(new MathPage());
         }
 
-        private void PhysPage_Click(object sender, RoutedEventArgs e)
+        private void OpenPhysPageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.SelectedMenuItemFrame.Navigate(new PhysicPage());
         }
 
-        private void ChemicPage_Click(object sender, RoutedEventArgs e)
+        private void OpenChemicPageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.SelectedMenuItemFrame.Navigate(new ChemistryPage());
         }
     }
 }

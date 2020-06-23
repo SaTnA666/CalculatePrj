@@ -10,5 +10,6 @@ namespace CalculateProject
     class Manager
     {
         public static Frame MainFrame { get; set; }
+        public static Frame SelectedMenuItemFrame { get; set; }
     }
 }

@@ -24,7 +24,7 @@ namespace CalculateProject
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new MainMenu());
+            MainFrame.Navigate(new WelcomePage());
             Manager.MainFrame = MainFrame;
         }
 

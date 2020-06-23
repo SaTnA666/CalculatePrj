@@ -7,10 +7,17 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainMenu">
-
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0"></Setter>
+            <Setter Property="Width" Value="auto"></Setter>
+            <Setter Property="Height" Value="auto"></Setter>
+            <Setter Property="Background" Value="#fac716"></Setter>
+        </Style>
+    </Page.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -18,8 +25,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Content="Математика" Name="MathPage" Click="MathPage_Click"></Button>
-        <Button Content="Физика" Name="PhysPage" Click="PhysPage_Click" Grid.Row="1"></Button>
-        <Button Content="Химия" Name="ChemicPage" Click="ChemicPage_Click" Grid.Row="2"></Button>
+        <Button Content="Математика" Name="OpenMathPageButton" Click="OpenMathPageButton_Click"></Button>
+        <Button Content="Физика" Name="OpenPhysPageButton" Click="OpenPhysPageButton_Click" Grid.Row="1"></Button>
+        <Button Content="Химия" Name="OpenChemicPageButton" Click="OpenChemicPageButton_Click" Grid.Row="2"></Button>
+        <Frame Grid.Column="1" Grid.RowSpan="3" NavigationUIVisibility="Hidden" x:Name="SelectedMenuItemFrame"></Frame>
     </Grid>
 </Page>
