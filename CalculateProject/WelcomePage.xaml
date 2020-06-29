@@ -12,9 +12,13 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Добро пожаловать!" FontSize="40"></TextBlock>
-        <TextBlock Grid.Row="1" VerticalAlignment="Top" FontSize="15" Text="Содержимное окна" Margin="0 20 0 0"></TextBlock>
-        <Button x:Name="StartUseButton" Grid.Row="1" Content="Начать пользование" Width="150" Click="StartUseButton_Click"></Button>
+        <TextBlock Text="Добро пожаловать!" FontSize="40"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Содержимное окна"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="StartUseButton" Grid.Row="2" Content="Начать пользование" Width="150" Click="StartUseButton_Click"/>
+        <Grid Grid.Row="3" Background="#fff176"/>
+        <TextBlock Grid.Row="3" Text="v 0.0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10 0 0 0" FontSize="12" FontWeight="Bold"/>
     </Grid>
 </Page>

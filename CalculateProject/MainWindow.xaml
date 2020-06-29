@@ -11,10 +11,10 @@
             <RowDefinition Height="75"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid Background="#00796b" Panel.ZIndex="-2"></Grid>
-        <TextBlock Text="Калькулятор" FontSize="30"></TextBlock>
-        <Button Content="Назад" Name="ButtonBack" HorizontalAlignment="Right" Click="ButtonBack_Click" Margin="0 0 20 0"></Button>
-        <Grid Grid.Row="1" Background="#eeeeee"></Grid>
-        <Frame Grid.Row="1" NavigationUIVisibility="Hidden" Name="MainFrame" ContentRendered="MainFrame_ContentRendered"></Frame>
+        <Grid Background="#fff176" Panel.ZIndex="-2"/>
+        <TextBlock Text="Калькулятор" FontSize="30"/>
+        <Button Content="Назад" Name="ButtonBack" HorizontalAlignment="Right" Click="ButtonBack_Click" Margin="0 0 20 0"/>
+        <Grid Grid.Row="1" Background="#eeeeee"/>
+        <Frame Grid.Row="1" NavigationUIVisibility="Hidden" Name="MainFrame" ContentRendered="MainFrame_ContentRendered"/>
     </Grid>
 </Window>
